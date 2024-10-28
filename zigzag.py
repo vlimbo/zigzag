@@ -4,14 +4,16 @@ def printAsterisksRight():
     while len(line) < 12:
         line = ' ' + line
         print(line)
+        
 
 def printAsterisksLeft():
     line = '********'
     spaces = 3
-    while spaces != 0:
+    while spaces != 1:
         print(" " * spaces, end="")
         print(line)
         spaces -= 1
-    
-printAsterisksRight()
-printAsterisksLeft()
+
+while True:
+    printAsterisksRight()
+    printAsterisksLeft()
